@@ -5,9 +5,7 @@ const { db } = require("./db");
 const { ensureConfigLoaded } = require("./util");
 
 async function runMigrationsIfNeeded() {
-  // Core schema
-  await db.query(`CREATE EXTENSION IF NOT EXISTS pgcrypto;`);
-
+  // Core schema (gen_random_uuid() is built-in in PG13+ / PGlite — no extension needed)
   await db.query(`
     CREATE TABLE IF NOT EXISTS patients (
       id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
