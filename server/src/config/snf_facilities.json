@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Riverbend Skilled Nursing",
+    "phone": "(555) 201-1001",
+    "distanceMiles": 2.4,
+    "acceptedInsurance": ["Medicaid", "Commercial", "Medicare"],
+    "historicalAvgResponseMinutesByInsurance": { "Medicaid": 160, "Commercial": 95, "Medicare": 120 },
+    "bedTypesAvailable": { "Skilled": 18, "Rehab": 4, "Vent": 0 },
+    "bedTypesNeededForDiagnosisGroup": { "CHF_COPD_STROKE": ["Skilled", "Rehab"] },
+    "lastSuccessfulPlacementDateISO": "2026-02-18T15:30:00Z"
+  },
+  {
+    "name": "Harborview Care Center",
+    "phone": "(555) 201-1002",
+    "distanceMiles": 5.8,
+    "acceptedInsurance": ["Medicaid", "Commercial"],
+    "historicalAvgResponseMinutesByInsurance": { "Medicaid": 210, "Commercial": 80, "Medicare": 140 },
+    "bedTypesAvailable": { "Skilled": 6, "Rehab": 11, "Vent": 1 },
+    "bedTypesNeededForDiagnosisGroup": { "CHF_COPD_STROKE": ["Rehab", "Skilled"] },
+    "lastSuccessfulPlacementDateISO": "2026-02-27T12:05:00Z"
+  },
+  {
+    "name": "Suncrest Subacute Rehab",
+    "phone": "(555) 201-1003",
+    "distanceMiles": 9.1,
+    "acceptedInsurance": ["Medicare", "Commercial"],
+    "historicalAvgResponseMinutesByInsurance": { "Medicaid": 240, "Commercial": 110, "Medicare": 105 },
+    "bedTypesAvailable": { "Skilled": 3, "Rehab": 16, "Vent": 0 },
+    "bedTypesNeededForDiagnosisGroup": { "CHF_COPD_STROKE": ["Rehab"] },
+    "lastSuccessfulPlacementDateISO": "2026-03-01T10:20:00Z"
+  },
+  {
+    "name": "Northgate Recovery House",
+    "phone": "(555) 201-1004",
+    "distanceMiles": 3.7,
+    "acceptedInsurance": ["Medicaid", "Medicare"],
+    "historicalAvgResponseMinutesByInsurance": { "Medicaid": 150, "Commercial": 140, "Medicare": 125 },
+    "bedTypesAvailable": { "Skilled": 12, "Rehab": 2, "Vent": 0 },
+    "bedTypesNeededForDiagnosisGroup": { "CHF_COPD_STROKE": ["Skilled"] },
+    "lastSuccessfulPlacementDateISO": "2026-02-10T09:10:00Z"
+  },
+  {
+    "name": "Maple Ridge Long Term Care",
+    "phone": "(555) 201-1005",
+    "distanceMiles": 14.3,
+    "acceptedInsurance": ["Medicaid"],
+    "historicalAvgResponseMinutesByInsurance": { "Medicaid": 260, "Commercial": 200, "Medicare": 210 },
+    "bedTypesAvailable": { "Skilled": 9, "Rehab": 0, "Vent": 0 },
+    "bedTypesNeededForDiagnosisGroup": { "CHF_COPD_STROKE": ["Skilled"] },
+    "lastSuccessfulPlacementDateISO": "2026-01-22T14:45:00Z"
+  }
+]
+

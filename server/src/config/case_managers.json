@@ -1,0 +1,6 @@
+[
+  { "id": "cm-1", "name": "A. Chen", "floors": ["1W", "2W"], "email": "chen@example.com" },
+  { "id": "cm-2", "name": "M. Rodriguez", "floors": ["3W", "4W"], "email": "rodriguez@example.com" },
+  { "id": "cm-3", "name": "S. Patel", "floors": ["5W", "6W"], "email": "patel@example.com" }
+]
+

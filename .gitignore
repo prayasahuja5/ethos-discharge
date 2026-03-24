@@ -1,0 +1,29 @@
+node_modules/
+.vite/
+.turbo/
+.next/
+dist/
+build/
+
+# Local Postgres (for the prototype)
+pgdata/
+pglog/
+
+# Env / secrets
+.env
+.env.*
+
+# PGlite embedded database
+server/.ethos_db/
+
+# Python
+*.pyc
+__pycache__/
+ethos-pulse/api/data/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+

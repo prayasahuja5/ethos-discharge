@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Camino Clinic - Riverside",
+    "phone": "(555) 202-3001",
+    "insuranceNetworkAccepted": ["Medicaid"],
+    "languagesSupported": ["English", "Spanish"],
+    "distanceMiles": 1.9,
+    "nextAvailableISO": "2026-03-22T14:00:00Z",
+    "typicalWaitMinutes": 45
+  },
+  {
+    "name": "Camino Clinic - Eastside",
+    "phone": "(555) 202-3002",
+    "insuranceNetworkAccepted": ["Medicaid", "Commercial"],
+    "languagesSupported": ["English"],
+    "distanceMiles": 6.2,
+    "nextAvailableISO": "2026-03-23T09:00:00Z",
+    "typicalWaitMinutes": 60
+  },
+  {
+    "name": "Camino Clinic - Midtown",
+    "phone": "(555) 202-3003",
+    "insuranceNetworkAccepted": ["Medicaid"],
+    "languagesSupported": ["English", "Spanish", "Vietnamese"],
+    "distanceMiles": 4.5,
+    "nextAvailableISO": "2026-03-21T10:30:00Z",
+    "typicalWaitMinutes": 30
+  }
+]
+

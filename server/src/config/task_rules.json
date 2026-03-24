@@ -1,0 +1,67 @@
+{
+  "diagnosisGroupsToTasks": [
+    {
+      "group": "CHF_COPD_STROKE",
+      "matchesAnyDiagnosisPrefix": ["I50", "J44", "I63", "I69"],
+      "tasks": [
+        { "taskType": "SNF_REFERRAL", "title": "SNF referral" },
+        { "taskType": "HOME_HEALTH_CONSULT", "title": "Home Health consult" },
+        { "taskType": "DME_COORDINATION", "title": "DME coordination" }
+      ]
+    },
+    {
+      "group": "SUBSTANCE_ABUSE",
+      "matchesAnyDiagnosisPrefix": ["F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19"],
+      "tasks": [
+        { "taskType": "SUBSTANCE_ABUSE_CONSULT", "title": "Substance abuse consult" },
+        { "taskType": "SOCIAL_WORK_REFERRAL", "title": "Social work referral" }
+      ]
+    }
+  ],
+  "insuranceAndNoPcpToTasks": [
+    {
+      "insuranceType": "Medicaid",
+      "requiresNoPcpOnFile": true,
+      "tasks": [
+        { "taskType": "PCP_PLACEMENT", "title": "PCP placement via Camino Clinic" }
+      ]
+    },
+    {
+      "insuranceType": "Medicare",
+      "requiresNoPcpOnFile": true,
+      "tasks": [
+        { "taskType": "PCP_PLACEMENT", "title": "PCP placement (Medicare panel)" }
+      ]
+    },
+    {
+      "insuranceType": "Uninsured",
+      "requiresNoPcpOnFile": true,
+      "tasks": [
+        { "taskType": "PCP_PLACEMENT", "title": "PCP placement — charity care referral" },
+        { "taskType": "SOCIAL_WORK_REFERRAL", "title": "Social work referral for insurance enrollment" }
+      ]
+    }
+  ],
+  "readmissionToTasks": [
+    {
+      "readmissionWithin30Days": true,
+      "tasks": [
+        { "taskType": "POST_DISCHARGE_FOLLOW_UP", "title": "Post-discharge follow-up (readmission risk)", "priority": "HIGH" }
+      ]
+    }
+  ],
+  "dischargeOrderToTasks": [
+    {
+      "requiresMedsPrescribed": true,
+      "tasks": [
+        {
+          "taskType": "PHARMACY_COORDINATION",
+          "title": "Pharmacy coordination",
+          "metadataFromEvent": {
+            "dischargeWindowMinutes": "dischargeWindowMinutes"
+          }
+        }
+      ]
+    }
+  ]
+}

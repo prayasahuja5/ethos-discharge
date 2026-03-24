@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: discharge
+      POSTGRES_PASSWORD: discharge
+      POSTGRES_DB: discharge_coordination
+    ports:
+      - "5432:5432"
+    volumes:
+      - discharge_pg_data:/var/lib/postgresql/data
+
+volumes:
+  discharge_pg_data:
